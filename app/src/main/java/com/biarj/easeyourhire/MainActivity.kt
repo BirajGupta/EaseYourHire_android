@@ -3,19 +3,24 @@ package com.biarj.easeyourhire
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.os.Handler
+import android.widget.Button
+import android.widget.EditText
 
 class MainActivity : AppCompatActivity() {
-
+lateinit var enterusername:EditText
+    lateinit var contactinfo:EditText
+    lateinit var loginb:Button
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        var enterusername=findViewById(R.id.enterusername)
+        var contactinfo=findViewById(R.id.contactinfo)
+        var loginb = findViewById(R.id.loginb)
+        loginb.setOnClickListener{
+            val i = Intent(this, OptionActivity::class.java)
+            startActivity(i)
 
-        Handler().postDelayed({
-            val startAct = Intent(this@MainActivity, LanguageActivity::class.java)
-            startActivity(startAct)
-            finish()
-        },2000)
 
+}
     }
 }
