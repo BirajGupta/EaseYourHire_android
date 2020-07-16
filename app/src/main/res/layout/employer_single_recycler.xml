@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="wrap_content"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:id="@+id/llcontent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+
+
+        <ImageView
+            android:id="@+id/imgBookImage"
+            android:layout_width="80dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="7dp"
+            />
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/txtPersonName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="Name"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:layout_marginLeft="12dp"/>
+
+
+            <TextView
+                android:id="@+id/txtPersonNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="7006641234"
+                android:layout_below="@id/txtPersonName"
+                android:layout_marginLeft="20dp"
+                android:gravity="bottom"/>
+
+            <TextView
+                android:id="@+id/txtPersonMerit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5 star"
+                android:layout_toRightOf="@id/txtPersonName"
+                android:layout_marginRight="15dp"
+                android:layout_alignParentRight="true"
+                android:gravity="right"
+                android:layout_marginTop="12dp"/>
+
+        </RelativeLayout>
+
+
+
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

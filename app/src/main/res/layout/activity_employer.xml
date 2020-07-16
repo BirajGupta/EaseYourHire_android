@@ -6,5 +6,21 @@
     android:layout_height="match_parent"
     tools:context=".EmployerActivity">
 
+    <TextView
+        android:id="@+id/txtEmployer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="30sp"
+        android:text="Worker Category"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/recyclerEmployer"
+        android:layout_below="@+id/txtEmployer"
+        android:layout_margin="15dp"/>
+
+
 
 </RelativeLayout>
