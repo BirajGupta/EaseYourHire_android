@@ -3,7 +3,7 @@ package com.biarj.easeyourhire
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 
-class employee : AppCompatActivity() {
+class EmployeeActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
