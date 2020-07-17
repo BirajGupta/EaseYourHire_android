@@ -12,7 +12,7 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:textSize="30sp"
-        android:text="Worker Category"/>
+        android:text=" Choose Worker Category"/>
 
     <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"

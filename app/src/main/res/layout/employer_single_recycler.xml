@@ -1,28 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="wrap_content"
-    android:layout_height="match_parent">
-
+    android:layout_height="wrap_content">
 
     <LinearLayout
-
         android:layout_width="match_parent"
-        android:id="@+id/llcontent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
-
-
-
-
+        android:weightSum="10">
         <ImageView
             android:id="@+id/imgBookImage"
-            android:layout_width="80dp"
+            android:layout_width="0dp"
             android:layout_height="100dp"
             android:layout_marginLeft="7dp"
+            android:layout_weight="2"
             />
         <RelativeLayout
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent">
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="8">
             <TextView
                 android:id="@+id/txtPersonName"
                 android:layout_width="wrap_content"
@@ -38,8 +33,9 @@
             <TextView
                 android:id="@+id/txtPersonNumber"
                 android:layout_width="wrap_content"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:text="7006641234"
+                android:layout_alignParentBottom="true"
                 android:layout_below="@id/txtPersonName"
                 android:layout_marginLeft="20dp"
                 android:gravity="bottom"/>
@@ -56,10 +52,6 @@
                 android:layout_marginTop="12dp"/>
 
         </RelativeLayout>
-
-
-
-
 
     </LinearLayout>
 
