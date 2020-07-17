@@ -17,7 +17,7 @@ class EmployerActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_employer)
 
-        val categories : ArrayList<String> = arrayListOf("Rakshit", "ravish", "arteev", "Biraj")
+        val categories : ArrayList<String> = arrayListOf("Plumber", "electrician", "labour", "carpenter", "mistri", "contractor","sweeper")
 
         recyclerCatDetails = findViewById(R.id.recyclerEmployer)
 
