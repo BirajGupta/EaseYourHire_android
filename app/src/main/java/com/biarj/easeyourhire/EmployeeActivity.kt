@@ -14,7 +14,7 @@ class EmployeeActivity : AppCompatActivity() {
         register=findViewById(R.id.register)
 
         register.setOnClickListener {
-            val i = Intent(this, MyprofileActivity::class.java)
+            val i = Intent(this, MyProfileActivity::class.java)
             startActivity(i)
 
         }

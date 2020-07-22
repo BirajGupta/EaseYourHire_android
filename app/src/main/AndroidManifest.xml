@@ -9,8 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".EmployeeActivity"/>
-        <activity android:name=".EmployerActivity"/>
+        <activity android:name=".MyProfileActivity"></activity>
+        <activity android:name=".EmployeeActivity" />
+        <activity android:name=".EmployerActivity" />
         <activity android:name=".OptionActivity" />
         <activity android:name=".MainActivity" />
         <activity android:name=".SplashActivity">

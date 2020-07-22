@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#9c27b0"
     tools:context=".EmployeeActivity">
 
     <EditText
@@ -12,8 +13,8 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="72dp"
         android:layout_marginTop="28dp"
+        android:textColor="#fff"
         android:ems="10"
-
         android:inputType="textPersonName"
         app:layout_constraintStart_toEndOf="@+id/textView3"
         app:layout_constraintTop_toBottomOf="@+id/fullname" />
@@ -22,10 +23,10 @@
         android:id="@+id/personimage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="44dp"
+        android:layout_marginTop="40dp"
 
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.448"
+        app:layout_constraintHorizontal_bias="0.551"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:srcCompat="@tools:sample/avatars" />
@@ -36,8 +37,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="76dp"
         android:text="FULL NAME"
+        android:textColor="#fff"
         android:textSize="20sp"
-        android:textColor="#000"
         app:layout_constraintEnd_toStartOf="@+id/fullname"
         app:layout_constraintHorizontal_bias="0.522"
         app:layout_constraintStart_toStartOf="parent"
@@ -47,11 +48,11 @@
         android:id="@+id/fullname"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="56dp"
+        android:layout_marginTop="64dp"
 
         android:ems="10"
         android:inputType="textPersonName"
-
+        android:textColor="#fff"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/textView"
         app:layout_constraintTop_toBottomOf="@+id/personimage" />
@@ -64,7 +65,7 @@
         android:layout_marginTop="44dp"
         android:text="AGE"
         android:textSize="20sp"
-        android:textColor="#000"
+        android:textColor="#fff"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
@@ -75,7 +76,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="40dp"
         android:text="OCCUPATION"
-        android:textColor="#000"
+        android:textColor="#fff"
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView3" />
@@ -88,7 +89,7 @@
         android:layout_marginTop="28dp"
         android:ems="10"
         android:inputType="textPersonName"
-
+        android:textColor="#fff"
         app:layout_constraintStart_toEndOf="@+id/textView4"
         app:layout_constraintTop_toBottomOf="@+id/age" />
 
@@ -99,7 +100,7 @@
         android:layout_marginStart="44dp"
         android:layout_marginTop="44dp"
         android:text="RATING"
-        android:textColor="#000"
+        android:textColor="#fff"
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView4" />
@@ -117,10 +118,13 @@
         android:id="@+id/register"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="152dp"
-        android:layout_marginTop="520dp"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="524dp"
+        android:background="#fa7720"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
         android:text="REGISTER"
-        android:textColor="#000"
+        android:textColor="#fff"
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
