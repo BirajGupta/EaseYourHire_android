@@ -72,7 +72,7 @@
         android:hint="ENTER PHONE NUMBER"
         android:inputType="phone"
         android:textColor="#C6BEBE"
-        android:textColorHint="c1bcbc"
+
         android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.409"
