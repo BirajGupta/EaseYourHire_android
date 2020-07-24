@@ -9,7 +9,7 @@ import android.widget.Button
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 
-class CatDetailsRecyclerAdapter(context: Context, var categories:ArrayList<String>): RecyclerView.Adapter<CatDetailsRecyclerAdapter.ResDetailsViewHolder>(){
+class CatDetailsRecyclerAdapter(val context: Context, var categories:ArrayList<String>): RecyclerView.Adapter<CatDetailsRecyclerAdapter.ResDetailsViewHolder>(){
     override fun onCreateViewHolder(
         parent: ViewGroup,
         viewType: Int

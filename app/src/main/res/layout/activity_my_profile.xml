@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#9c27b0"
     tools:context=".MyProfileActivity">
 
     <ImageView
@@ -13,6 +14,7 @@
         android:id="@+id/imgProImage"
         android:layout_margin="10dp"
         android:layout_centerHorizontal="true"
+
         />
 
     <TextView
@@ -24,7 +26,7 @@
         android:textSize="17sp"
         android:layout_margin="10dp"
         android:textStyle="bold"
-        android:textColor="#000"
+        android:textColor="#fff"
         />
 
     <TextView
@@ -36,7 +38,7 @@
         android:textSize="17sp"
         android:layout_margin="10dp"
         android:textStyle="bold"
-        android:textColor="#000"
+        android:textColor="#fff"
         />
 
     <TextView
@@ -48,7 +50,7 @@
         android:textSize="17sp"
         android:layout_margin="10dp"
         android:textStyle="bold"
-        android:textColor="#000"
+        android:textColor="#fff"
         />
 
     <TextView
@@ -60,7 +62,19 @@
         android:textSize="25sp"
         android:layout_margin="10dp"
         android:layout_centerHorizontal="true"
+        android:textColor="#fff"
         />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnRequestsPage"
+        android:text="Apply for job"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:background="#fa7720"
+        android:textColor="#fff"
+        android:padding="10dp"/>
 
 
 
