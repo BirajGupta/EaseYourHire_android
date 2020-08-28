@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:background="@color/colorAccent"
+    android:background="#9c27B0"
     android:layout_height="match_parent"
     tools:context=".RequestActivity">
     <EditText
@@ -58,11 +58,11 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textColor="#000"
+        android:textColor="#fff"
         android:text="GENERATE REQUEST"
         android:padding="15dp"
+        android:background="#ff7720"
         android:layout_below="@+id/txtlocation"
-
         android:layout_marginTop="100dp"
         android:layout_centerHorizontal="true"/>
 
