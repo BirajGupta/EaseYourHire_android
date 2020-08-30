@@ -2,15 +2,25 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.biarj.easeyourhire">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_config"
+        android:resizeableActivity="false"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+<<<<<<< Updated upstream
         <activity android:name=".RequestsActivity"></activity>
         <activity android:name=".RequestActivity"></activity>
+=======
+        <activity android:name=".RegistrationActivity"></activity>
+        <activity android:name=".RequestsActivity" />
+>>>>>>> Stashed changes
         <activity android:name=".MyProfileActivity" />
         <activity android:name=".EmployeeActivity" />
         <activity android:name=".EmployerActivity" />
