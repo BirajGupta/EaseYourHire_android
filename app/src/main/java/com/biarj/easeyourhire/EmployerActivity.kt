@@ -6,7 +6,6 @@ import android.os.Bundle
 import android.widget.Button
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.biarj.easeyourhire.generated.RequestActivity
 
 class EmployerActivity : AppCompatActivity() {
 

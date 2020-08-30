@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".RequestsActivity"></activity>
-        <activity android:name=".generated.RequestActivity"></activity>
+        <activity android:name=".RequestActivity"></activity>
         <activity android:name=".MyProfileActivity" />
         <activity android:name=".EmployeeActivity" />
         <activity android:name=".EmployerActivity" />

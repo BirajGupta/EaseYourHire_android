@@ -1,4 +1,4 @@
-package com.biarj.easeyourhire.generated
+package com.biarj.easeyourhire
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
