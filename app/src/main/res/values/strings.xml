@@ -1,3 +1,16 @@
 <resources>
     <string name="app_name">EaseYourHire</string>
+    <string name="eyh">eyh</string>
+    <string name="display">Choose an occupation</string>
+
+    <string-array name="occupation_arrays">
+        <item>Plumber</item>
+        <item>Electrician</item>
+        <item>Mistri</item>
+        <item>Mazdoor</item>
+        <item>Carpenter</item>
+        <item>Gardener</item>
+        <item>Cook</item>
+        <item>House-Keeper</item>
+    </string-array>
 </resources>
