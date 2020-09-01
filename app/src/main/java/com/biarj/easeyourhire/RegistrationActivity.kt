@@ -7,9 +7,8 @@ import android.content.SharedPreferences
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.provider.Settings
-import android.widget.Button
-import android.widget.EditText
-import android.widget.Toast
+import android.view.View
+import android.widget.*
 import androidx.appcompat.widget.Toolbar
 import androidx.core.app.ActivityCompat
 import com.android.volley.Response
@@ -23,26 +22,37 @@ class RegistrationActivity : AppCompatActivity() {
     lateinit var toolbar: Toolbar
     lateinit var etmobile: EditText
     lateinit var etage: EditText
-    lateinit var etoccupation: EditText
+
     lateinit var etpassword: EditText
     lateinit var etconpass: EditText
     lateinit var register: Button
     lateinit var sp: SharedPreferences
+    lateinit var spinner1:Spinner
+    lateinit var spinner2:Spinner
+    lateinit var spinner3:Spinner
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_registration)
         title = "Register Yourself"
-      //  sp = getSharedPreferences(getString(R.string.preference_file), Context.MODE_PRIVATE)
+        sp = getSharedPreferences("eyh", Context.MODE_PRIVATE)
 
         etname = findViewById(R.id.name)
         etmobile = findViewById(R.id.mobile)
         etage = findViewById(R.id.age)
-        etoccupation = findViewById(R.id.occupation)
+
         etpassword = findViewById(R.id.pass)
         etconpass = findViewById(R.id.conpass)
         register = findViewById(R.id.register)
+       spinner1 =  findViewById(R.id.occupation1)
+        spinner2 =  findViewById(R.id.occupation2)
+        spinner3 =  findViewById(R.id.occupation3)
+        val type = sp.getString("type","")
+        if(type == "employer")
+        {spinner1.visibility=View.GONE
+            spinner2.visibility=View.GONE
+            spinner3.visibility=View.GONE 
 
-
+        }
         register.setOnClickListener {
 
             val queue = Volley.newRequestQueue(this)
@@ -51,19 +61,25 @@ class RegistrationActivity : AppCompatActivity() {
             val name = etname.text.toString()
             val mobile = etmobile.text.toString()
             val pass = etpassword.text.toString()
-            val occupation = etoccupation.text.toString()
+            val occupation1 = spinner1.selectedItem.toString()
+            val occupation2 = spinner2.selectedItem.toString()
+            val occupation3 = spinner3.selectedItem.toString()
             val age = etage.text.toString()
             jsonParams.put("phone", mobile)
             jsonParams.put("fullname", name)
-            jsonParams.put("occupation", occupation)
+            if (type == "employer") {
+                jsonParams.put("occupation1", occupation1)
+                jsonParams.put("occupation2", occupation2)
+                jsonParams.put("occupation3", occupation3)
+            }
             jsonParams.put("age", age)
             jsonParams.put("pass", pass)
             if (Validations.validateNameLength(name)) {
 
-                if (etage!=null) {
+                if (etage != null) {
 
                     if (Validations.validateMobile(mobile)) {
-                        if (etoccupation != null) {
+                        if (true) {
                             if (Validations.validatePasswordLength(pass)) {
 
                                 if (Validations.matchPassword(pass, etconpass.text.toString())) {
@@ -151,7 +167,7 @@ class RegistrationActivity : AppCompatActivity() {
                             } else {
                                 etpassword.error = "password should be more than of length 4 "
                             }
-                        } else {etoccupation.error="can't be empty"
+                        } else {//etoccupation.error="can't be empty"
 
                         }
                     }else

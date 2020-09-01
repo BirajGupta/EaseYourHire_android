@@ -26,7 +26,7 @@
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="36dp"
+        android:layout_marginStart="16dp"
         android:layout_marginTop="84dp"
         android:text="CONTACY NUMBER"
         android:textColor="#F8F6F6"
@@ -68,7 +68,7 @@
         android:id="@+id/pass"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="16dp"
         android:ems="10"
 
         android:inputType="textPassword"
@@ -76,7 +76,7 @@
 
         android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.409"
+        app:layout_constraintHorizontal_bias="0.829"
         app:layout_constraintStart_toEndOf="@+id/contact"
         app:layout_constraintTop_toBottomOf="@+id/phone" />
 
@@ -84,15 +84,30 @@
         android:id="@+id/loginb"
         android:layout_width="150dp"
         android:layout_height="50dp"
-        android:layout_marginTop="92dp"
+        android:layout_marginTop="32dp"
         android:background="#FA7720"
         android:text="LOGIN"
         android:textColor="#fff"
         android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.536"
+        app:layout_constraintHorizontal_bias="0.459"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/pass" />
+
+    <TextView
+        android:id="@+id/fp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="Forget Password?"
+        android:textColor="#fff"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.459"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loginb" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -107,6 +122,6 @@
         android:layout_marginBottom="20dp"
         android:text="Don't have an account?Sign up now"
         android:textColor="#fff"
-        android:textSize="16sp" />
+        android:textSize="14sp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

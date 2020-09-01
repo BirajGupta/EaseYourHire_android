@@ -4,9 +4,7 @@ import android.app.AlertDialog
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-<<<<<<< Updated upstream
-import com.biarj.easeyourhire.R
-=======
+
 import android.provider.Settings
 import android.widget.Button
 import android.widget.EditText
@@ -17,7 +15,8 @@ import com.android.volley.toolbox.JsonObjectRequest
 import com.android.volley.toolbox.Volley
 import org.json.JSONException
 import org.json.JSONObject
->>>>>>> Stashed changes
+import java.lang.reflect.Method
+
 
 class RequestActivity : AppCompatActivity() {
     lateinit var etname:EditText
@@ -113,4 +112,3 @@ class RequestActivity : AppCompatActivity() {
         }
 
     }
-}

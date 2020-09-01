@@ -1,4 +1,4 @@
- <?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -58,27 +58,61 @@
         android:textColor="@color/black"
         />
 
-    <EditText
-        android:id="@+id/occupation"
+    <Spinner
+        android:id="@+id/occupation1"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="45dp"
         android:layout_below="@+id/mobile"
-        android:layout_gravity="center_horizontal"
+        android:entries="@array/occupation_arrays"
         android:layout_marginLeft="20dp"
         android:layout_marginTop="10dp"
         android:layout_marginRight="20dp"
         android:background="#fff"
-        android:hint="OCCUPATION"
-        android:inputType="text"
+        android:spinnerMode="dialog"
+        android:prompt="@string/display"
+
         android:padding="10dp"
         android:textColor="@color/black"
         />
+    <Spinner
+        android:id="@+id/occupation2"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@+id/occupation1"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:background="#fff"
 
+        android:spinnerMode="dialog"
+        android:prompt="@string/display"
+        android:entries="@array/occupation_arrays"
+
+        android:padding="10dp"
+        android:textColor="@color/black"
+        />
+    <Spinner
+        android:id="@+id/occupation3"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@+id/occupation2"
+
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:background="#fff"
+
+        android:spinnerMode="dialog"
+        android:entries="@array/occupation_arrays"
+        android:prompt="@string/display"
+        android:padding="10dp"
+
+        />
     <EditText
         android:id="@+id/pass"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/occupation"
+        android:layout_below="@+id/occupation3"
         android:layout_gravity="center_horizontal"
         android:layout_marginLeft="20dp"
         android:layout_marginTop="10dp"

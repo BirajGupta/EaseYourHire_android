@@ -14,13 +14,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-<<<<<<< Updated upstream
-        <activity android:name=".RequestsActivity"></activity>
-        <activity android:name=".RequestActivity"></activity>
-=======
-        <activity android:name=".RegistrationActivity"></activity>
+        <activity android:name=".OtpVerifyActivity"></activity>
+        <activity android:name=".ForgotPassActivity" />
         <activity android:name=".RequestsActivity" />
->>>>>>> Stashed changes
+        <activity android:name=".RequestActivity" />
+        <activity android:name=".RegistrationActivity" />
         <activity android:name=".MyProfileActivity" />
         <activity android:name=".EmployeeActivity" />
         <activity android:name=".EmployerActivity" />
