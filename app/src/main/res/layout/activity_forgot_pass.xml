@@ -22,7 +22,7 @@
         android:layout_below="@+id/applogo"
         android:layout_margin="10dp"
         android:padding="10dp"
-        android:text="Enter your registered mobile and email address"
+        android:text="Enter your registered mobile number"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:textColor="@android:color/white" />
 

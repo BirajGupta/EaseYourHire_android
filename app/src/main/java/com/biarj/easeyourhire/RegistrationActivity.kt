@@ -56,7 +56,7 @@ class RegistrationActivity : AppCompatActivity() {
         register.setOnClickListener {
 
             val queue = Volley.newRequestQueue(this)
-            val url = "http://9ea6a18e7ed8.ngrok.io/eyhdb/signup.php"
+            val url = "https://0579498d8098.ngrok.io/eyhdb/signupempee.php"
             val jsonParams = JSONObject()
             val name = etname.text.toString()
             val mobile = etmobile.text.toString()
@@ -67,10 +67,10 @@ class RegistrationActivity : AppCompatActivity() {
             val age = etage.text.toString()
             jsonParams.put("phone", mobile)
             jsonParams.put("fullname", name)
-            if (type == "employer") {
-                jsonParams.put("occupation1", occupation1)
-                jsonParams.put("occupation2", occupation2)
-                jsonParams.put("occupation3", occupation3)
+            if (type == "employee") {
+                jsonParams.put("occupation", occupation1)
+                jsonParams.put("occupation1", occupation2)
+                jsonParams.put("occupation2", occupation3)
             }
             jsonParams.put("age", age)
             jsonParams.put("pass", pass)
@@ -96,9 +96,11 @@ class RegistrationActivity : AppCompatActivity() {
 
                                                         val success =
                                                             it.getBoolean("success")
+                                                        println("******************************")
+                                                        println(success)
 
                                                         if (success) {
-
+                                                            println("in apisuccess")
                                                             val data1 =
                                                                 it.getString("message")
 
@@ -114,6 +116,7 @@ class RegistrationActivity : AppCompatActivity() {
                                                             startActivity(i)
                                                             finish()
                                                         } else {
+                                                            println("in apifalse")
                                                             Toast.makeText(
                                                                 this,
                                                                 "SOMETHING WENT WRONG",
