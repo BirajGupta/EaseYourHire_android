@@ -39,7 +39,7 @@
         android:background="#fff"
         android:hint="MOBILE NUMBER(10)"
         android:inputType="phone"
-        android:maxLength="10"
+        android:maxLength="15"
         android:maxLines="1"
         android:padding="10dp" />
 
