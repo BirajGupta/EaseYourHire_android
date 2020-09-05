@@ -62,7 +62,7 @@ class OtpVerifyActivity : AppCompatActivity() {
         println("verify func called")
 
         val queue = Volley.newRequestQueue(this)
-        val url = "https://bf3d3915f03f.ngrok.io/eyhdb/forgotpass.php"
+        val url = "https://8b65e6cf708e.ngrok.io/eyhdb/forgotpass.php"
         val jsonParams = JSONObject()
 
 
@@ -85,11 +85,11 @@ class OtpVerifyActivity : AppCompatActivity() {
                             object : JsonObjectRequest(
                                 Method.POST, url, jsonParams, Response.Listener {
                                     try {
-                                        val data = it.getJSONObject("data")
-                                        val success = data.getBoolean("success")
+
+                                        val success = it.getBoolean("success")
 
                                         if (success) {
-                                            val msg = data.getString("message")
+                                            val msg = it.getString("message")
                                             Toast.makeText(this, msg, Toast.LENGTH_SHORT).show()
                                             val i = Intent(this, MainActivity::class.java)
                                             sp.edit().clear().apply()
