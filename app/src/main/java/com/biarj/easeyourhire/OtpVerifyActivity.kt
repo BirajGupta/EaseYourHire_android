@@ -62,7 +62,9 @@ class OtpVerifyActivity : AppCompatActivity() {
         println("verify func called")
 
         val queue = Volley.newRequestQueue(this)
+
         val url = "https://7bf224560da6.ngrok.io/eyhdb/forgotpass.php"
+
         val jsonParams = JSONObject()
 
 
