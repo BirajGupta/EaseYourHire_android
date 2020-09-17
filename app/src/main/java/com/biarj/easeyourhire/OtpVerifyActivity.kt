@@ -55,22 +55,22 @@ class OtpVerifyActivity : AppCompatActivity() {
 
         println("in forgotact")
 
-        val phnNum = intent.getStringExtra("mobile_num")!!
+        val phnNum = intent.getStringExtra("mobile_num")
 
-        verifyPhoneNumber(phnNum)
+      //  verifyPhoneNumber(phnNum)
 
         println("verify func called")
 
         val queue = Volley.newRequestQueue(this)
-        val url = "https://bf3d3915f03f.ngrok.io/eyhdb/forgotpass.php"
+        val url = "https://7bf224560da6.ngrok.io/eyhdb/forgotpass.php"
         val jsonParams = JSONObject()
 
 
         btnSubmit.setOnClickListener {
 
-            val verified = sharedPreferences.getBoolean("verified",false)
+           // val verified = sharedPreferences.getBoolean("verified",false)
 
-            if(verified){
+            if(true){
 
             val pass = etNewPassword.text.toString()
             val conpass = etConfirmNewPassword.text.toString()
@@ -85,14 +85,13 @@ class OtpVerifyActivity : AppCompatActivity() {
                             object : JsonObjectRequest(
                                 Method.POST, url, jsonParams, Response.Listener {
                                     try {
-                                        val data = it.getJSONObject("data")
-                                        val success = data.getBoolean("success")
+
+                                        val success = it.getBoolean("success")
 
                                         if (success) {
-                                            val msg = data.getString("message")
+                                            val msg = it.getString("message")
                                             Toast.makeText(this, msg, Toast.LENGTH_SHORT).show()
                                             val i = Intent(this, MainActivity::class.java)
-                                            sp.edit().clear().apply()
                                             startActivity(i)
                                             finish()
                                         } else {

@@ -44,9 +44,9 @@ lateinit var fp:TextView
         loginb.setOnClickListener {
 
             val queue = Volley.newRequestQueue(this)
-            val url = "http://9232ff46a983.ngrok.io/eyhdb/login_validation.php"
+            val url = "https://7bf224560da6.ngrok.io/eyhdb/login_validation.php"
             val jsonParams = JSONObject()
-            val mobile=contactinfo.text.toString()
+            val mobile="+91${contactinfo.text.toString()}"
             val pass=pass.text.toString()
             jsonParams.put("phone",mobile)
             jsonParams.put("pass",pass)

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#9c27b0"
+    android:background="@color/colorAccent"
     tools:context=".EmployerActivity">
 
     <TextView
@@ -21,7 +21,8 @@
         android:layout_height="wrap_content"
         android:id="@+id/recyclerEmployer"
         android:layout_below="@+id/txtEmployer"
-        android:layout_margin="15dp"/>
+        android:layout_margin="10dp"
+        android:padding="10dp"/>
 
     <Button
         android:layout_width="wrap_content"
@@ -37,5 +38,16 @@
         android:layout_marginBottom="10dp"/>
 
 
+    <RelativeLayout
+        android:id="@+id/pl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fff">
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" />
+    </RelativeLayout>
 
 </RelativeLayout>

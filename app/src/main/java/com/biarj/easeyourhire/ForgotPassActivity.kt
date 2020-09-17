@@ -40,7 +40,7 @@ class ForgotPassActivity : AppCompatActivity() {
 
         next.setOnClickListener {
 
-            val mobile = etmobile.text.toString()
+            val mobile = "+91${etmobile.text.toString()}"
             println("************")
             println(mobile)
 

@@ -56,7 +56,7 @@ class RegistrationActivity : AppCompatActivity() {
         register.setOnClickListener {
 
             val queue = Volley.newRequestQueue(this)
-            val url = "https://0579498d8098.ngrok.io/eyhdb/signupempee.php"
+            val url = "http://d106d3c1da67.ngrok.io/eyhdb/signupempee.php"
             val jsonParams = JSONObject()
             val name = etname.text.toString()
             val mobile = etmobile.text.toString()
@@ -135,8 +135,7 @@ class RegistrationActivity : AppCompatActivity() {
                                                 Response.ErrorListener { }) {
                                                 override fun getHeaders(): MutableMap<String, String> {
                                                     val headers = HashMap<String, String>()
-                                                    headers["Content-Type"] =
-                                                        "application/json"
+                                                    headers["Content-Type"] = "application/json"
 
                                                     return headers
                                                 }

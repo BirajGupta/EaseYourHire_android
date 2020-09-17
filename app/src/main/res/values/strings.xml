@@ -4,6 +4,7 @@
     <string name="display">Choose an occupation</string>
 
     <string-array name="occupation_arrays">
+        <item>Choose an occupation</item>
         <item>Plumber</item>
         <item>Electrician</item>
         <item>Mistri</item>
