@@ -55,22 +55,24 @@ class OtpVerifyActivity : AppCompatActivity() {
 
         println("in forgotact")
 
-        val phnNum = intent.getStringExtra("mobile_num")!!
+        val phnNum = intent.getStringExtra("mobile_num")
 
-        verifyPhoneNumber(phnNum)
+      //  verifyPhoneNumber(phnNum)
 
         println("verify func called")
 
         val queue = Volley.newRequestQueue(this)
-        val url = "https://8b65e6cf708e.ngrok.io/eyhdb/forgotpass.php"
+
+        val url = "https://7bf224560da6.ngrok.io/eyhdb/forgotpass.php"
+
         val jsonParams = JSONObject()
 
 
         btnSubmit.setOnClickListener {
 
-            val verified = sharedPreferences.getBoolean("verified",false)
+           // val verified = sharedPreferences.getBoolean("verified",false)
 
-            if(verified){
+            if(true){
 
             val pass = etNewPassword.text.toString()
             val conpass = etConfirmNewPassword.text.toString()
@@ -92,7 +94,6 @@ class OtpVerifyActivity : AppCompatActivity() {
                                             val msg = it.getString("message")
                                             Toast.makeText(this, msg, Toast.LENGTH_SHORT).show()
                                             val i = Intent(this, MainActivity::class.java)
-                                            sp.edit().clear().apply()
                                             startActivity(i)
                                             finish()
                                         } else {

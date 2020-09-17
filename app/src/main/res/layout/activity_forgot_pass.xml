@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#9C27B0"
+    android:background="@color/colorAccent"
     tools:context=".ForgotPassActivity">
 
     <ImageView
@@ -39,7 +39,7 @@
         android:background="#fff"
         android:hint="MOBILE NUMBER(10)"
         android:inputType="phone"
-        android:maxLength="15"
+        android:maxLength="10"
         android:maxLines="1"
         android:padding="10dp" />
 
