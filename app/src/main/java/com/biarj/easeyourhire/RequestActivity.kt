@@ -35,7 +35,7 @@ class RequestActivity : AppCompatActivity() {
         submit=findViewById(R.id.btnsubmit)
         submit.setOnClickListener {
             val queue = Volley.newRequestQueue(this)
-            val url = "https://cccc2c8c359a.ngrok.io/eyhdb/requests.php"
+            val url = "https://d27f8e5f6f78.ngrok.io/eyhdb/requests.php"
             val jsonParams = JSONObject()
             val mobile=etmobile.text.toString()
             val name=etname.text.toString()

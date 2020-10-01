@@ -38,7 +38,6 @@ class CatDetailsRecyclerAdapter(val context: Context, var workerlist: ArrayList<
 
         holder.workerName.text = w.workername
         holder.workerphoneno.text = w.workerphoneno
-        holder.workerMerit.text = w.workermerit
         Picasso.get().load(w.workerimg).error(R.drawable.profile).into(holder.workerImage)
         holder.workerphoneno.setOnClickListener{
 
@@ -61,7 +60,7 @@ class CatDetailsRecyclerAdapter(val context: Context, var workerlist: ArrayList<
 
     class ResDetailsViewHolder(view: View) : RecyclerView.ViewHolder(view){
 
-            var workerName: TextView = view.findViewById(R.id.txtPersonName)
+        var workerName: TextView = view.findViewById(R.id.txtPersonName)
         var workerphoneno: TextView = view.findViewById(R.id.txtPersonNumber)
         var workerMerit: TextView = view.findViewById(R.id.txtPersonMerit)
         var workerImage: ImageView = view.findViewById(R.id.imgPersonImage)

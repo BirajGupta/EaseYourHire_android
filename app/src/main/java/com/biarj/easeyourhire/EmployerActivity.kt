@@ -39,28 +39,30 @@ var workerlist=ArrayList<Workers>()
 
            pl.visibility = View.VISIBLE
         val que = Volley.newRequestQueue(this)
-        val url = "url"
+        val url = "https://d27f8e5f6f78.ngrok.io/eyhdb/sendWorkerdata.php"
         if (ConnectionManager().checkconnectivity(this)) {
             val jsonObjectRequest =
                 object : JsonObjectRequest(Method.GET, url, null, Response.Listener {
                     try {
                         pl.visibility = View.GONE
-                        val data = it.getJSONObject("data")
-                        val boolean = data.getBoolean("success")
+
+                        val boolean = it.getBoolean("success")
+                        println(boolean)
                         if (boolean) {
-                            val data2 = data.getJSONArray("data")
-                            for (i in 0 until data2.length()) {
-                                val jsonObject = data2.getJSONObject(i)
+                            val data = it.getJSONArray("data")
+                            println(data)
+                            for (i in 0 until data.length()) {
+                                val jsonObject = data.getJSONObject(i)
+                                println("reached")
                                 val workers=Workers(
-                                    jsonObject.getInt("workerid"),
-                                    jsonObject.getString("workername"),
-                                    jsonObject.getString("workerphoneno"),
-                                    jsonObject.getString("workermerit"),
-                                    jsonObject.getString("workerimg")
+                                    jsonObject.getInt("id"),
+                                    jsonObject.getString("fullname"),
+                                    jsonObject.getString("phone"),
+                                    jsonObject.getString("Images")
                                 )
                                 workerlist.add(workers)
 
-
+                                println(workers)
 
 
                                 catRecyclerAdapter = CatDetailsRecyclerAdapter(this, workerlist)
